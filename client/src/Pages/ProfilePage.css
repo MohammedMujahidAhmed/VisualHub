@@ -1,0 +1,105 @@
+/* Add these styles to your existing stylesheet */
+
+/* ProfilePage Styles */
+.mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .grow {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grow:hover {
+    transform: scale(1.05);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .mb-32 {
+    margin-bottom: 8rem;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .primary {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .max-w-md {
+    max-width: 28rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* History Section Styles */
+  .history-section {
+    margin-top: 2rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  /* Button Styles */
+  .primary:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .mb-32 {
+      margin-bottom: 4rem;
+    }
+  
+    .text-4xl {
+      font-size: 1.75rem;
+    }
+  
+    .max-w-md {
+      max-width: 100%;
+    }
+  }
+  

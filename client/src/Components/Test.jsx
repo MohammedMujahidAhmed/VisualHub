@@ -1,0 +1,63 @@
+import React from 'react';
+import Tree from 'react-d3-tree';
+import "../index.css";
+
+const renderColor = ({ nodeDatum, toggleNode }) => (
+  <g>
+    <circle r={nodeDatum.color == "yellow"?"20":"15"} fill={nodeDatum.color?nodeDatum.color:null}/>
+    <text fill="black" strokeWidth="2" x="20" >
+      {nodeDatum.name}
+    </text>
+  </g>
+);
+
+export default function Test({ rootNode, outIndexSwap, inIndexSwap }) {
+  function treeNodeToOrgChart(node) {
+    if (!node) {
+      return null;
+    }
+
+    const convertNode = (currentNode) => {
+      if (!currentNode) {
+        return { name: " " }; // Replace null child with a node containing data as " "
+      }
+
+      const convertedNode = { name: currentNode.data.toString(), color: currentNode.color?currentNode.color.toString():null };
+
+      const leftChild = convertNode(currentNode.left);
+      const rightChild = convertNode(currentNode.right);
+
+      if (leftChild || rightChild) {
+        convertedNode.children = [];
+        if (leftChild) {
+          convertedNode.children.push(leftChild);
+        }
+        if (rightChild) {
+          convertedNode.children.push(rightChild);
+        }
+      }
+
+      return convertedNode;
+    };
+
+    return convertNode(node);
+  }
+
+  const orgChartFromNode = treeNodeToOrgChart(rootNode);
+
+  return (
+    <div className='max-w-[1200px] m-auto'>
+      <div className='max-w-[1000px] m-auto border mt-[32px] border-white-500 h-[340px] rounded bg-white'>
+        <Tree
+          data={orgChartFromNode == null ? { name: " " } : orgChartFromNode}
+          orientation="vertical"
+          zoom={0.65}
+          translate={{ x: 400, y: 35 }}
+          depthFactor={75}
+          pathFunc="straight"
+          renderCustomNodeElement={renderColor}
+        />
+      </div>
+    </div>
+  );
+}

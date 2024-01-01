@@ -1,0 +1,642 @@
+/* /* @tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+.heading{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 5rem;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.card-heading{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.bg-color{
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+
+    color: #ebe7ef;
+    background: radial-gradient(#280a48, #20043d);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    min-height: 80rem;
+}
+
+.bg-glass{
+    background: rgba(61, 5, 119, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(61, 5, 119, 1);
+}
+
+.bg-input{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-button-home{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-element{
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-input-home{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.69);
+} */
+
+
+
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+ul {
+  list-style: square;
+}
+
+
+.heading{
+    margin: 0;
+    font-family: "  ";
+    font-size: 5rem;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.card-heading{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.bg-color{
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+
+    color: #ebe7ef;
+    background: radial-gradient(#280a48, #20043d);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    min-height: 80rem; 
+}
+
+.bg-glass{
+    background: rgba(61, 5, 119, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(61, 5, 119, 1);
+}
+
+.bg-input{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-button-home{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-element{
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-input-home{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.69);
+}
+#examples {
+    margin: 3rem auto;
+  }
+  
+  #examples h2 {
+    text-align: left;
+  }
+  
+  #examples menu {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+  }
+  
+  #examples menu button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #a18aba;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #examples menu button:hover {
+    background-color: #1b082f;
+    color: #ebe7ef;
+  }
+  
+  #examples menu button.active {
+    background-color: #7925d3;
+    color: #ebe7ef;
+  }
+
+  
+  /* Move the buttons somewhat down */
+  /* .button-menu {
+    margin-top: 5rem;
+  }
+   */
+  /* Add designed border to the buttons */
+  /* .button-menu button {
+    border: none;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #a18aba;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-menu button:hover {
+    background-color: #1b082f;
+    color: #ebe7ef;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-menu button.active {
+    background-color: #7925d3;
+    color: #ebe7ef;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .questions-table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  
+  .column {
+  .column {
+    padding: 10px; /* Adjust this value as needed */
+  /* }  */
+  /* Add this to your CSS or use it directly in your JSX if using tailwind classes */
+/* .lang-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+/* @tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+ul {
+  list-style: square;
+}
+
+
+.heading{
+    margin: 0;
+    font-family: "  ";
+    font-size: 5rem;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.card-heading{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.bg-color{
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+
+    color: #ebe7ef;
+    background: radial-gradient(#280a48, #20043d);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    min-height: 80rem; 
+}
+
+.bg-glass{
+    background: rgba(61, 5, 119, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(61, 5, 119, 1);
+}
+
+.bg-input{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-button-home{
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-element{
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.bg-input-home{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.69);
+}
+#examples {
+    margin: 3rem auto;
+  }
+  
+  #examples h2 {
+    text-align: left;
+  }
+  
+  #examples menu {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+  }
+  
+  #examples menu button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #a18aba;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #examples menu button:hover {
+    background-color: #1b082f;
+    color: #ebe7ef;
+  }
+  
+  #examples menu button.active {
+    background-color: #7925d3;
+    color: #ebe7ef;
+  }
+
+  
+  /* Move the buttons somewhat down */
+  .button-menu {
+    margin-top: 5rem;
+  }
+  
+  /* Add designed border to the buttons */
+  .button-menu button {
+    border: none;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #a18aba;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-menu button:hover {
+    background-color: #1b082f;
+    color: #ebe7ef;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-menu button.active {
+    background-color: #7925d3;
+    color: #ebe7ef;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .questions-table {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  
+  .column {
+    padding: 10px; /* Adjust this value as needed */
+  }
+  /* Add this to your CSS or use it directly in your JSX if using tailwind classes */
+.lang-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden; /* Ensure horizontal overflow is hidden */
+}
+
+.bg-glass {
+  background: rgba(61, 5, 119, 0.71);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(61, 5, 119, 1);
+}
+.cards-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cards-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.scroll-instructions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
+  margin-top: 10px;
+  animation: arrow-bounce 1s infinite;
+}
+
+@keyframes arrow-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.cards-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cards-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+ */
+
+/* scroll */
+/* * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+} */
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+/* 
+.container {
+	width: 100%;
+	height: 100%;
+	background-color: #c9d6df;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} */
+
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+}
+
+
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #ebf1f3;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+  background-color: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #ebf1f3;
+  	border-bottom: 2px solid #ebf1f3;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+.arrow {
+	width: 0;
+	height: 40px;
+	border: 1px solid #ebf1f3;
+	position: relative;
+	animation: scroll 1.5s infinite;
+	-webkit-animation: scroll 1.5s infinite;
+
+	&::after {
+		content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    width: 1px;
+    height: 10px;
+/* 		
+		// triangle */
+    border-top: 10px  solid #ebf1f3;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+	}
+}
+
+@keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		height: 40px;
+	}
+	30% {
+		height: 70px;
+	}
+	60% {
+		height: 40px;
+	}
+}

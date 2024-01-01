@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Fonts</title>
+    <style>
+        #changingHeader {
+            font-size: 36px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="changingHeader">Hello, World!</h1>
+
+    <script>
+        function changeFontInfinitely() {
+            const fonts = ['Arial', 'Verdana', 'Georgia', 'Tahoma', 'Courier New', 'Times New Roman'];
+            const header = document.getElementById('changingHeader');
+
+            let currentIndex = 0;
+
+            setInterval(() => {
+                header.style.fontFamily = fonts[currentIndex];
+                currentIndex = (currentIndex + 1) % fonts.length;
+            }, 300); // Change font every 1000 milliseconds (1 second)
+        }
+
+        // Start the font-changing loop
+        changeFontInfinitely();
+    </script>
+</body>
+</html>
