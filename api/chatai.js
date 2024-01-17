@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: '<Put your own api key here>',
 });
 
 export async function generateChatResponse(userMessage) {
